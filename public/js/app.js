@@ -8,7 +8,7 @@ messageTwo.textContent = ''
 
 weatherform.addEventListener("submit", (e) => {
   e.preventDefault();
-  messageTwo.textContent = 'Loading...'
+  messageTwo.textContent = 'Loading..'
   const address = search.value;
   const geocodeURL =
     "https://api.mapbox.com/geocoding/v5/mapbox.places/" +
