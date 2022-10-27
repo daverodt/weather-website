@@ -12,7 +12,7 @@ const forecast = ({latitude, longitude}, callback) => {
             callback(undefined, {
               temperature: current.temperature,
               feelslike: current.feelslike,
-              forecastData: `${current.weather_descriptions}, It is currently ${current.temperature} Farenheit degrees out. There is a ${current.precip}% change of rain.`
+              forecastData: `${current.weather_descriptions}, It is currently ${current.temperature} Farenheit degrees out but it feels like ${current.feelslike}. There is a ${current.precip}% change of rain.`
             });
         }
     })
